@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+	<style>
+		h1{
+			text-align: centre;
+		}
+		form{
+			background-color: lightblue;
+			padding: 10px;
+			
+		}
+
+		form input{
+			padding: 5px;
+			width: 100px;
+			margin: 20px 0;
+		}
+
+
+		textarea{
+			width: 30%;
+			height: 40px;
+			box-sizing: border-box;
+			border-radius: 4px;
+			padding: 10px 0;
+		}
+		select{
+			background-color: none;
+			width: 10%;
+			padding: 5px;
+			border-radius: 2px;
+		}
+
+		input[type="radio"] {
+			width: 10px;
+			height: 10px;
+			margin-left: 10px;
+		}
+
+		input[type="submit"] {
+			background-color: green;
+			width: 120px;
+			display: run-in;
+			margin: 10px auto;
+			border: none;
+			border-radius: 5px;
+			font-weight: bold;
+			font-size: 18px;
+			font-family: "calibri", calibri light, monospace;
+			color: white;
+			margin-top: 30px;
+			padding: 20px;
+			text-align: center;
+			cursor: pointer;
+		}
+
+		input[type="clear"] {
+			background-color: blue;
+			width: 90px;
+			display: run-in;
+			margin: 10px auto;
+			border: none;
+			border-radius: 5px;
+			font-weight: bold;
+			font-size: 18px;
+			font-family: "calibri", calibri light, monospace;
+			color: white;
+			margin-top: 30px;
+			padding: 20px;
+			text-align: center;
+			cursor: pointer;
+		}
+
+	</style>
+</head>
+<body>
+	<h1><u>Project Management</u></h1>
+<form align="centre">
+
+Project Name
+<input type="text" name="name" id="name" placeholder="Project name"><br><br>
+
+Assigned to
+<select name="Assigned to" id="Assigned to">
+	<option selected>Er Merry Petision</option>
+	<option>Gabriel Newton</option>
+	<option>Lucy Meta</option>
+	<option>Phonton Eclipse</option>
+</select><br><br>
+
+Start Date
+<input type="date" name="date"><br><br>
+
+End Date
+<input type="date" name="date"><br><br>
+
+Priority
+<label for="radiogroup1"></label>
+<input type="radio" name="radiogroup1" value="radio" id="radiogroup1"/>High
+
+<label for="radiogroup2"></label>
+<input type="radio" name="radiogroup2" value="radio" id="radiougroup"/>Average
+
+<label for="radiogroup3"></label>
+<input type="radio" name="radiogroup3" value="radio" id="radiogroup3"/>Low<br><br>
+
+Description
+<textarea></textarea><br><br>
+
+<input type="submit" value="submit">
+<input type="clear"  value="clear">
+
+</form>
+</body>
+</html>
